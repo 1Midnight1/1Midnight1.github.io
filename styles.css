@@ -1,0 +1,29 @@
+.center {
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cover {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.background-main {
+    background-image: url(./images/homePageBackground3.jpg);
+    background-size: cover;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* Style all font awesome icons */
+.fab {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fab:hover {
+  opacity: 0.7;
+}

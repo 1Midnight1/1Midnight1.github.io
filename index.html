@@ -1,32 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Abdul Zulfiqar</h1>
+      <h4>Software Engineer</h4>
+    </div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/027fb878b5.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./styles.css">
-  <title>Abdul Zulfiqar</title>
-</head>
+    <div class="main-column">
+      <h2>Projects</h2>
+      <div class="project bordered-container">
+        <div class="project-title">
+          <div>
+            <h3>Convolutional Neural Network From Scratch</h3>
+            <h5>Classifier for FashionMNIST Built From the Ground Up</h5>
+          </div>
+          <a
+            href="https://github.com/1Midnight1?tab=repositories"
+            target="_blank"
+            ><img src="static/images/github-mark.svg" alt=""
+          /></a>
+        </div>
 
-<body class="text-center text-white background-main">
-  <div class="cover">
-    <div class="card center" style="width: 24rem;">
-      <div class="card-body">
-        <h3 class="card-title">Abdul Zulfiqar</h5>
-          <h6 class="card-subtitle mb-2 ">McMaster Software Engineering Co-op</h6>
-          <p class="card-text">looking for summer 2023 software engineering internship
-          </p>
-          <span>
-            <a href="https://www.linkedin.com/in/abdul-zulfiqar-5181b01b9" class="fab fa-linkedin"></a>
-            <a href="https://github.com/1Midnight1" class="fab fa-github"></a>
-          </span>
+        There's no better way to truly understand something than to build it from scratch. 
+        In this project, I built a PyTorch-like API to build neural networks in Rust, currently supporting simple convolutional neural networks.
+        I used wgpu (a low level graphics API that minimally abstracts over vulkan, directX and metal) and compute shaders to achieve GPU acceleration. 
+        I then trained it on the FashionMNIST dataset, achieving impressive accuracy.
+      </div>
+      <div class="project bordered-container">
+        <div class="project-title">
+          <div>
+            <h3>Guava Disease Classifier</h3>
+            <h5>Identifying Diseases in Guava with Machine Learning</h5>
+          </div>
+          <a
+            href="https://github.com/1Midnight1/GuavaDiseaseClassifier"
+            target="_blank"
+            ><img src="static/images/github-mark.svg" alt=""
+          /></a>
+        </div>
+
+        The project focuses on automating quality control in guava farming by detecting diseases like Anthracnose and fruit fly infestations with computer vision. 
+        I compared three machine learning techniques—Convolutional Neural Networks (CNNs), Support Vector Machines (SVMs), 
+        and Random Forests—to determine the best approach for accuracy, efficiency, and reliability. 
+        By identifying an optimal method, we aim to reduce inspection times, improve food safety, and promote sustainable farming practices.
+      </div>
+      <div class="project bordered-container">
+        <div class="project-title">
+          <div>
+            <h3>Recidivism Prediction ML Model</h3>
+            <h5>Investigating Dataset Bias With COMPAS Dataset</h5>
+          </div>
+          <a
+            href="https://github.com/1Midnight1/COMPAS-Data-Bias"
+            target="_blank"
+            ><img src="static/images/github-mark.svg" alt=""
+          /></a>
+        </div>
+
+        The Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) was a system used to assess risks of recidivisim (likelihood to reoffend) in the criminal population. 
+        Unfortunately, the creators of the system, as well as the judicial bodies using it failed to properly evaluate it before it was put into use and it was found that COMPAS was causing more harm than doing good.
+        This project aims to reproduce some of their failures with a logistic regression model to predict the recidivism scores assigned to people by COMPAS, and show how proper evaluation and tuning of the model and data can lead to a more fair
+      </div>
+      <div class="project bordered-container">
+        <div class="project-title">
+          <div>
+            <h3>Realm</h3>
+            <h5>AR Social Media & Tours</h5>
+          </div>
+          <a
+            href="https://github.com/russellrd/realm"
+            target="_blank"
+            ><img src="static/images/github-mark.svg" alt=""
+          /></a>
+        </div>
+
+        The goal of the project is to create an AR platform that facilitates social, educational, and entertaining experiences through one cohesive user experience. 
+        Social experiences are facilitated by allowing users to place AR objects in the real world for others to see. 
+        Users will be able to have friends on the platform, and engage in the unique social interactions made possible by the platform both privately with friends, and publicly. 
+        Educational experiences will be provided by businesses on our platform through AR tours. 
+        Users can participate in these tours and provide both text and visual enhancement to any setting, whether it be a national park or a historic site. 
+        Entertaining experiences will be provided by on demand AR projection in any space that will allow users to see what interesting things from around the world might look like up close.
+      </div>
+      <div class="project bordered-container">
+        <div class="project-title">
+          <div>
+            <h3>RideShare</h3>
+            <h5>A great way to set up a carpool</h5>
+          </div>
+          <a
+            href="https://github.com/Kartik1109/RideShare"
+            target="_blank"
+            ><img src="static/images/github-mark.svg" alt=""
+          /></a>
+        </div>
+
+        RideShare is a state-of-the-art carpool taxi application dedicated to providing users with a seamless and enjoyable transportation experience. Our application features a responsive and engaging user interface built using React, ensuring a user-friendly environment for hassle-free ride booking and real-time updates.
       </div>
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>

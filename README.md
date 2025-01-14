@@ -1,1 +1,3 @@
-# 1Midnight1.github.io
+# Personal Portfolio
+
+simple page listing out my projects

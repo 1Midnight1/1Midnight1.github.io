@@ -1,4 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: white;
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -17,11 +19,38 @@ h4 {
     font-size: 16pt;
 }
 
+
+
 .title {
-    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 2s forwards ease-in;
+
+    h4 {
+        margin-top: -4.5vh;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.bordered-container.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+.section-header.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
 }
 
 .main-column {
@@ -29,11 +58,11 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
-    h2 {
-        margin-bottom: 50pt;
-        font-size: 36pt;
-    }
+.section-header {
+    margin-bottom: 50pt;
+    font-size: 36pt;
 }
 
 
@@ -45,6 +74,7 @@ h4 {
     margin-bottom: 50pt;
     padding: 15pt;
 }
+
 .project {
     h3 {
         font-size: 20pt;
@@ -57,6 +87,20 @@ h4 {
     }
 }
 
+.project, .section-header {
+    -webkit-transform: translateY(50px)  translateZ(0);
+    transform: translateY(50px)  translateZ(0);
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition: 1.2s;
+    -o-transition: 1.2s;
+    transition: 1.2s;
+    opacity: 0;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
 .project-title {
     display: flex;
     justify-content: space-between;
@@ -64,5 +108,83 @@ h4 {
         margin-top: 0%;
         width: 20pt;
         float: right;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .section-header {
+        margin-bottom: 50pt;
+        font-size: 24pt;
+    }
+
+    .project {
+        h3 {
+            font-size: 14pt;
+        }
+    
+        h5 {
+            font-size: 10pt;
+            font-weight: normal;
+            margin-bottom: 10pt;
+        }
+    }
+
+    .bordered-container {
+        width: 80vw;
+        margin-bottom: 50pt;
+        padding: 15pt;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .section-header {
+        margin-bottom: 50pt;
+        font-size: 24pt;
+    }
+
+    .project {
+        h3 {
+            font-size: 14pt;
+        }
+    
+        h5 {
+            font-size: 10pt;
+            font-weight: normal;
+            margin-bottom: 10pt;
+        }
+    }
+
+    .bordered-container {
+        width: 650px;
+        margin-bottom: 50pt;
+        padding: 15pt;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .section-header {
+        margin-bottom: 50pt;
+        font-size: 36pt;
+    }
+
+    .project {
+        h3 {
+            font-size: 24pt;
+        }
+    
+        h5 {
+            font-size: 14pt;
+            font-weight: normal;
+            margin-bottom: 10pt;
+        }
+    }
+
+    .bordered-container {
+        width: 900px;
+        margin-bottom: 50pt;
+        padding: 15pt;
     }
 }
